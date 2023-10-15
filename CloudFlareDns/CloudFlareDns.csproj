@@ -13,7 +13,15 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageId>CloudFlareDns</PackageId>
 		<PackageTags>C#;Cloudflare;DNS;Record DNS;ljchuello;</PackageTags>
+		<PackageIcon>icon_128.png</PackageIcon>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\icon_128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

@@ -75,7 +75,7 @@ namespace CloudFlareDns.Clients
         /// <param name="comment">Comments or notes about the DNS record. This field has no effect on DNS responses</param>
         /// <param name="ttl">Time To Live (TTL) of the DNS record in seconds. Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones</param>
         /// <returns></returns>
-        public async Task<Record> Create(string content, string name, bool proxied, RecordType type, string comment, int ttl)
+        public async Task<Record> Create(string name, string content,bool proxied, RecordType type, int ttl, string comment = "")
         {
             // To json
             string raw = $"{{ \"content\": \"{content}\", \"name\": \"{name}\", \"proxied\": {(proxied ? "true" : "false")}, \"type\": \"{type}\", \"comment\": \"{comment}\", \"ttl\": {ttl} }}";
@@ -84,7 +84,8 @@ namespace CloudFlareDns.Clients
             string json = await Core.SendPostRequest(_xAuthKey, _xAuthEmail, $"/zones/{_zoneIdentifier}/dns_records/", raw);
 
             // Set
-            Record record = JsonConvert.DeserializeObject<Record>(json);
+            JObject result = JObject.Parse(json);
+            Record record = JsonConvert.DeserializeObject<Record>($"{result["result"]}");
 
             // Free
             return record;

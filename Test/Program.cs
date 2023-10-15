@@ -14,7 +14,13 @@ namespace Test
         {
             try
             {
-                CloudFlareDnsClient cloudFlareDnsClient = new CloudFlareDnsClient("", "", "");
+                // Variables
+                string xAuthKey = ""; // Global API Key
+                string xAuthEmail = ""; // Domain owner email in cloudflare
+                string zoneIdentifier = ""; // Domain identifier
+
+                // Client
+                CloudFlareDnsClient cloudFlareDnsClient = new CloudFlareDnsClient(xAuthKey, xAuthEmail, zoneIdentifier);
             }
             catch (Exception ex)
             {

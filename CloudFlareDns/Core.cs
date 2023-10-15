@@ -101,11 +101,19 @@ namespace CloudFlareDns
             }
 
             // No Created
-            if (httpResponseMessage.StatusCode != HttpStatusCode.Created && httpResponseMessage.StatusCode != HttpStatusCode.NoContent && httpResponseMessage.StatusCode != HttpStatusCode.Accepted)
+            switch (httpResponseMessage.StatusCode)
             {
-                JObject result = JObject.Parse(json);
-                List<Error> error = JsonConvert.DeserializeObject<List<Error>>($"{result["errors"]}") ?? new List<Error>();
-                throw new Exception($"{error[0].Code} - {error[0].Message}");
+                case HttpStatusCode.OK:
+                case HttpStatusCode.Created:
+                case HttpStatusCode.NoContent:
+                case HttpStatusCode.Accepted:
+                    break;
+
+                default:
+                    JObject result = JObject.Parse(json);
+                    List<Error> error = JsonConvert.DeserializeObject<List<Error>>($"{result["errors"]}") ?? new List<Error>();
+                    throw new Exception($"{error[0].Code} - {error[0].Message}");
+                    break;
             }
 
             return json;

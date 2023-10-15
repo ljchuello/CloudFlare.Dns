@@ -6,7 +6,7 @@
 
 		<PackageId>CloudFlare.Dns</PackageId>
 		<Title>CloudFlare.Dns</Title>
-		<Version>1.3.3</Version>
+		<Version>1.3.4</Version>
 		<Authors>ljchuello</Authors>
 		<Description>A C#/.NET library makes it easy to manage DNS records on the Cloudflare platform. This library is a valuable tool for managing DNS records in various contexts and applications.</Description>
 		<PackageProjectUrl>https://www.nuget.org/packages/CloudFlare.Dns/</PackageProjectUrl>

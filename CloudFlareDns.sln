@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudFlareDns", "CloudFlareDns\CloudFlareDns.csproj", "{A2F98034-67B1-40CB-B524-F35B49C47ECF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudFlareDns", "CloudFlareDns\CloudFlareDns.csproj", "{A2F98034-67B1-40CB-B524-F35B49C47ECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{0761324F-7CA6-4258-B9CD-D6272E884A0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{0761324F-7CA6-4258-B9CD-D6272E884A0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{F0D73464-A25C-451A-B16B-8578FE5E7FF7}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

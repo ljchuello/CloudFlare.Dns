@@ -1,26 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>CloudFlare DNS for DotNET</Title>
-		<Version>1.1.2</Version>
+
+		<PackageId>CloudFlare.Dns</PackageId>
+		<Title>CloudFlare.Dns</Title>
+		<Version>1.3.2</Version>
 		<Authors>ljchuello</Authors>
-		<Product>CloudFlare API Cloud for DotNET</Product>
-		<Description>Developed is a C#/.NET library that enables interaction with Cloudflare APIs, allowing for the management of DNS records within the Cloudflare platform. This project proves valuable for the administration of DNS records in various contexts and applications.</Description>
-		<PackageProjectUrl>https://www.nuget.org/packages/CloudFlareDns/</PackageProjectUrl>
+		<Description>A C#/.NET library makes it easy to manage DNS records on the Cloudflare platform. This library is a valuable tool for managing DNS records in various contexts and applications.</Description>
+		<PackageProjectUrl>https://www.nuget.org/packages/CloudFlare.Dns/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/ljchuello/CloudFlareDns</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageId>CloudFlareDns</PackageId>
-		<PackageTags>C#;Cloudflare;DNS;Record DNS;ljchuello;</PackageTags>
+		<Copyright>MIT</Copyright>
+		<PackageTags>C#;Cloudflare;DNS;DDNS;ljchuello;</PackageTags>
 		<PackageIcon>icon_128.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\icon_128.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\icon_128.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>

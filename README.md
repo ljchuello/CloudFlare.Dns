@@ -38,7 +38,3 @@ To install you must go to Nuget package manager and search for "HetznerCloudApiD
 |  | Get All | Get One | Post | Put | Patch | Delete |
 |--|:--:|:--:|:--:|:--:|:--:|:--:|
 | DNS Records for a Zone | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-
----
-
-> Made with ❤️ in LATAM for the 🌎

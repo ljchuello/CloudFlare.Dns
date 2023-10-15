@@ -27,7 +27,7 @@ This library is developed in .NET Standard 2.0 and is compatible with all .NET, 
 
 ## Installation
 
-To install you must go to Nuget package manager and search for "HetznerCloudApiDotNet" and then install.
+To install you must go to Nuget package manager and search for "CloudFlare.Dns" and then install.
 
 ### [NuGet Package](https://www.nuget.org/packages/CloudFlare.Dns)
 

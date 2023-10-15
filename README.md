@@ -33,6 +33,35 @@ To install you must go to Nuget package manager and search for "HetznerCloudApiD
 
     PM> Install-Package CloudFlare.Dns
 
+## Usage
+
+```csharp
+// Variables
+string xAuthKey = "UltraPrivateSecretKeyHetzner"; // Global API Key
+string xAuthEmail = "lalolanda@gmail.com"; // Domain owner email in cloudflare
+string zoneIdentifier = "Domain identifier"; // Domain identifier
+
+// Client
+CloudFlareDnsClient cloudFlareDnsClient = new CloudFlareDnsClient(xAuthKey, xAuthEmail, zoneIdentifier);
+
+// Create record ipv4; with proxied with cloudflare and TTL in 60 seg / 1 min
+Record record01 = await cloudFlareDnsClient.Record.Create("test-01.deployrise.com", "8.8.8.8", false, RecordType.A, 60, comment: "This commentary it's optional");
+
+// Create record cname; without proxied and ttl in 120 seg / 2 min
+Record record02 = await cloudFlareDnsClient.Record.Create("test-02.deployrise.com", "google.com", false, RecordType.CNAME, 120, comment: "This commentary it's optional");
+```
+
+
+When creating a subdomain, we can either write the complete address or just the subdomain. For example, we can use store.domain.com or just store. Both cases are completely valid
+
+```csharp
+// We create a subdomain by specifying the complete address
+Record record = await cloudFlareDnsClient.Record.Create("store.deployrise.com", "8.8.8.8", false, RecordType.A, 60);
+
+// We create a subdomain by specifying the short address
+Record record = await cloudFlareDnsClient.Record.Create("store", "8.8.8.8", false, RecordType.A, 60);
+```
+
 ## Implemented functionality
 
 |  | Get All | Get One | Post | Put | Patch | Delete |

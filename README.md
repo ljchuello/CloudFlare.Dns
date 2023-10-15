@@ -2,6 +2,18 @@
 
 ![CloudFlare.Dns](https://raw.githubusercontent.com/ljchuello/CloudFlare.Dns/master/icon_128.png)
 
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_CloudFlare.Dns&metric=security_rating)
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_CloudFlare.Dns&metric=bugs)
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_CloudFlare.Dns&metric=vulnerabilities)
+![](https://img.shields.io/nuget/v/CloudFlare.Dns) ![](https://img.shields.io/nuget/dt/CloudFlare.Dns)
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_CloudFlare.Dns&metric=reliability_rating)
+![](https://img.shields.io/github/languages/code-size/ljchuello/CloudFlare.Dns)
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_CloudFlare.Dns&metric=ncloc)
+![](https://img.shields.io/github/languages/top/ljchuello/CloudFlare.Dns)
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_CloudFlare.Dns&metric=sqale_rating)
+![](https://img.shields.io/github/contributors/ljchuello/CloudFlare.Dns)
+![](https://img.shields.io/github/last-commit/ljchuello/CloudFlare.Dns)
+
 Developed is a C#/.NET library that enables interaction with Cloudflare APIs, allowing for the management of DNS records within the Cloudflare platform. This project proves valuable for the administration of DNS records in various contexts and applications.
 
 ## Compatibility

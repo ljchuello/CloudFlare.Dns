@@ -1,11 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>CloudFlare DNS for DotNET</Title>
+		<Version>1.1.2</Version>
+		<Authors>ljchuello</Authors>
+		<Product>CloudFlare API Cloud for DotNET</Product>
+		<Description>Developed is a C#/.NET library that enables interaction with Cloudflare APIs, allowing for the management of DNS records within the Cloudflare platform. This project proves valuable for the administration of DNS records in various contexts and applications.</Description>
+		<PackageProjectUrl>https://www.nuget.org/packages/CloudFlareDns/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ljchuello/CloudFlareDns</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>CloudFlareDns</PackageId>
+		<PackageTags>C#;Cloudflare;DNS;Record DNS;ljchuello;</PackageTags>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
 
 </Project>

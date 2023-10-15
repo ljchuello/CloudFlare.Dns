@@ -51,7 +51,6 @@ Record record01 = await cloudFlareDnsClient.Record.Create("test-01.deployrise.co
 Record record02 = await cloudFlareDnsClient.Record.Create("test-02.deployrise.com", "google.com", false, RecordType.CNAME, 120, comment: "This commentary it's optional");
 ```
 
-
 When creating a subdomain, we can either write the complete address or just the subdomain. For example, we can use store.domain.com or just store. Both cases are completely valid
 
 ```csharp
@@ -61,6 +60,9 @@ Record record = await cloudFlareDnsClient.Record.Create("store.deployrise.com", 
 // We create a subdomain by specifying the short address
 Record record = await cloudFlareDnsClient.Record.Create("store", "8.8.8.8", false, RecordType.A, 60);
 ```
+
+## Wiki
+If you like the project and want to understand how it works in depth, you can visit the documentation in [the wiki](https://github.com/ljchuello/CloudFlare.Dns/wiki)
 
 ## Implemented functionality
 

@@ -2,17 +2,7 @@
 
 ![CloudFlare.Dns](https://raw.githubusercontent.com/ljchuello/CloudFlare.Dns/master/icon_128.png)
 
-![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=security_rating)
-![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=bugs)
-![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=vulnerabilities)
-![](https://img.shields.io/nuget/v/CloudFlare.Dns) ![](https://img.shields.io/nuget/dt/CloudFlare.Dns)
-![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=reliability_rating)
-![](https://img.shields.io/github/languages/code-size/ljchuello/CloudFlare.Dns)
-![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=ncloc)
-![](https://img.shields.io/github/languages/top/ljchuello/CloudFlare.Dns)
-![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=sqale_rating)
-![](https://img.shields.io/github/contributors/ljchuello/CloudFlare.Dns)
-![](https://img.shields.io/github/last-commit/ljchuello/CloudFlare.Dns)
+![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=security_rating) ![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=bugs) ![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=vulnerabilities) ![](https://img.shields.io/nuget/v/CloudFlare.Dns) ![](https://img.shields.io/nuget/dt/CloudFlare.Dns) ![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=reliability_rating) ![](https://img.shields.io/github/languages/code-size/ljchuello/CloudFlare.Dns) ![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=ncloc) ![](https://img.shields.io/github/languages/top/ljchuello/CloudFlare.Dns) ![](https://sonarcloud.io/api/project_badges/measure?project=ljchuello_cloudflare-dns&metric=sqale_rating) ![](https://img.shields.io/github/contributors/ljchuello/CloudFlare.Dns) ![](https://img.shields.io/github/last-commit/ljchuello/CloudFlare.Dns)
 
 Developed is a C#/.NET library that enables interaction with Cloudflare APIs, allowing for the management of DNS records within the Cloudflare platform. This project proves valuable for the administration of DNS records in various contexts and applications.
 
@@ -37,7 +27,7 @@ To install you must go to Nuget package manager and search for "CloudFlare.Dns" 
 
 ```csharp
 // Variables
-string xAuthKey = "UltraPrivateSecretKeyHetzner"; // Global API Key
+string xAuthKey = "UltraPrivateSecretKeyCloudFlare"; // Global API Key
 string xAuthEmail = "lalolanda@gmail.com"; // Domain owner email in cloudflare
 string zoneIdentifier = "Domain identifier"; // Domain identifier
 
